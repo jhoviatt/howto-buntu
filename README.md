@@ -13,7 +13,7 @@ Linux has `man-pages` built into the system, containing a way too much informati
 
 There are even existing tools that can be used to search the man pages, such as the `man -k` command. Though something like this can be overwhelming to a beginner, as a search for 'change directory' returns some 200 potential results in a wall of text.
 
-There are other tools that some have built, allowing you to search the man pages (such as [this neat site](http://explainshell.com/)) though too often these return frustratingly few results ('change directory' had 0 results).
+There are other tools that some have built (such as [this neat site](http://explainshell.com/)), allowing learn about commands through their man descriptions, though this isn't exactly useful for a beginner who doesn't know that `cd` even *is* a command.
 
 #### How about something in between?
 
