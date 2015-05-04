@@ -50,5 +50,17 @@ features:
 -direct search of google returning potential help/solutions and links to pages
 
 implementation:
--?????????????
+----howto
 
+----googlehowto
+-alias 'ghow'
+
+--function: get_page(query)
+-argument= a string of text to use as a search query
+-translate query into a url
+
+--function: get_results(page)
+-argument= a url (html file) to parse
+-parse a search page with beautiful soup --expand on this
+  --function: print_results(???)
+  -output directly to stdin (formatted nicely (use printf?))
