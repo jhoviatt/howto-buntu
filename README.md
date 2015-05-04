@@ -24,6 +24,4 @@ Ideally, this project would bring a user friendly `howto` search tool to the com
 Currently, this project has no implimentation. All there is, is an `ideas.txt` file containing my brainstorming which is open to explore ideas and plan features.
 If you have an idea, open an issue and let's talk about it. When we like it, submit a pull request to add it to the ideas file - or better yet, to start implementing it.
 
-I'm not currently going to be working on this actively, though I wanted to put my ideas out into the wild to see what happens. 
-
 So for now, *I'll just leave this here...*
