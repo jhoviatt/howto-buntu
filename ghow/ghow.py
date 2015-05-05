@@ -1,4 +1,6 @@
 
+#!/usr/bin/env python
+
 # Jared Henry Oviatt
 
 import requests
@@ -7,13 +9,13 @@ from bs4 import BeautifulSoup
 import sys
 
 
-def get_url():
+def get_url(argv):
 
   search_terms = []
   search_url = "https://www.google.com/search?q="
 
   # put args (words) in a list
-  for each_arg in sys.argv[1:]:
+  for each_arg in argv:
     search_terms.append(str(each_arg))
   
   # make a url out of list
@@ -71,15 +73,19 @@ def get_results(url):
   return soup
 
 
-def main():
+def main(argv):
+
+  if not argv:
+    print "I need something to search for!"
+    return 1
   
-  SEARCH_URL = get_url() # gets url from args
+  SEARCH_URL = get_url(argv) # gets url from args
 
   get_results(SEARCH_URL)
 
-  return
+  return 0
   
 
 if __name__ == '__main__':
-  main()
+  main(sys.argv[1:])
 
