@@ -63,4 +63,8 @@ implementation:
 -argument= a url (html file) to parse
 -parse a search page with beautiful soup --expand on this
   --function: print_results(???)
-  -output directly to stdin (formatted nicely (use printf?))
+
+--function: open_result(page)
+-argument= a result page to open
+-parse page to take the main content out (like reddit's mobile does)
+
