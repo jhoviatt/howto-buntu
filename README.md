@@ -25,3 +25,12 @@ Currently, this project has no implimentation. All there is, is an `ideas.txt` f
 If you have an idea, open an issue and let's talk about it. When we like it, submit a pull request to add it to the ideas file - or better yet, to start implementing it.
 
 So for now, *I'll just leave this here...*
+
+-----------------------------------------------------------
+
+###`googlehowto` Install instructions
+
+1. `git clone` to a local directory of your choice (or fork it, then clone)
+2. run `./ghow_install.sh` - use the command `chmod u+x ghow_install.sh` if you do not have execute privelages already
+3. make sure you have Beautiful Soup installed
+4. google away using the command `ghow` or `googlehowto` followed by search terms! (ex. `-$ ghow change directory`)
