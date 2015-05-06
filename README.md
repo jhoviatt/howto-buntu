@@ -21,14 +21,14 @@ Ideally, this project would bring a user friendly `howto` search tool to the com
 
 -----------------------------------------------------------
 
-### Install Instructions
+### Installation Instructions
 
 1. `git clone` to a local directory of your choice (or fork it, then clone)
 2. make sure you have Beautiful Soup installed
 3. add the following to your ~/.bashrc:
-    alias googlehowto='python $HOME/bin/ghow.py'
-    alias ghow='googlehowto'
-    alias howto='python $HOME/bin/howto.py'
+    * `alias googlehowto='python $HOME/bin/ghow.py'`
+    * `alias ghow='googlehowto'`
+    * `alias howto='python $HOME/bin/howto.py'`
 4. run `./ghow_install.sh` - use the command `chmod u+x ghow_install.sh` if you do not have execute privelages already
 5. run `./howto_install.sh` - use the command `chmod u+x howto_install.sh` if you do not have execute privelages already
 6. source your updated .bashrc with the command `~/.bashrc` -OR- restart your terminal
