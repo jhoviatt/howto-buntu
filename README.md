@@ -34,6 +34,8 @@ Ideally, this project would bring a user friendly `howto` search tool to the com
 6. run command `./howto_install.sh` - use the command `chmod u+x howto_install.sh` if you do not have execute privelages already
 7. source your updated .bashrc with the command `~/.bashrc` -OR- restart your terminal
 
+If you're confused after these instructions, try [these instead](https://github.com/underscorejho/howto-buntu/wiki/Beginners%27-guide-to-installing-howto-buntu).
+
 ###### Now you can...
 * Google away using the command `ghow` or `googlehowto` followed by search terms! (ex. `-$ ghow change directory`)
 * Search the man pages with `howto` folled by search terms, or learn some basics with `howto basics`!
