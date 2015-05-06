@@ -25,8 +25,10 @@ chmod 744 howto/howto.py
 
 # put in ~/bin CHECK ~/bin is in PATH and CHECK ~bin is a directory
 if [[ "$PATH" == ?(*:)"$HOME/bin"?(:*) ]]; then
-  echo "adding howto to $HOME/bin"
-  cp howto/howto.py $HOME/bin/howto.py 
+  echo "adding howto to $HOME/bin..."
+  cp howto/howto.py $HOME/bin/howto.py
+  echo "adding basics to $HOME/bin..."
+  cp howto/basics.py $HOME/bin/basics.py 
 else 
   if [-d $HOME/bin]; then
     echo "..."
@@ -37,10 +39,12 @@ else
   fi
   echo "$HOME/bin not in $PATH..."
   echo "adding $HOME/bin to $PATH..."
+  echo "# created by howto-buntu (https://github.com/underscorejho/howto-buntu)" >> ~/.bashrc
   echo "export PATH=$PATH:$HOME/bin" >> ~/.bashrc
-  echo "copying howto.py to $HOME/bin/howto.py"
+  echo "adding howto to $HOME/bin..."
   cp howto/howto.py $HOME/bin/howto.py 
+  echo "adding basics to $HOME/bin..."
+  cp howto/basics.py $HOME/bin/basics.py 
 fi
 
-# source .bashrc
-. ~/.bashrc
+

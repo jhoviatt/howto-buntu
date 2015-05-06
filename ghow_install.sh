@@ -29,7 +29,7 @@ chmod 744 ghow/ghow.py
 
 # put in ~/bin CHECK ~/bin is in PATH and CHECK ~bin is a directory
 if [[ "$PATH" == ?(*:)"$HOME/bin"?(:*) ]]; then
-  echo "adding ghow to $HOME/bin"
+  echo "adding ghow to $HOME/bin..."
   cp ghow/ghow.py $HOME/bin/ghow.py 
 else 
   if [-d $HOME/bin]; then
@@ -41,10 +41,9 @@ else
   fi
   echo "$HOME/bin not in $PATH..."
   echo "adding $HOME/bin to $PATH..."
-  $PATH = $PATH:$HOME/bin 
-  echo "copying ghow.py to $HOME/bin/ghow.py"
+  echo "# created by howto-buntu (https://github.com/underscorejho/howto-buntu)" >> ~/.bashrc
+  echo "export PATH=$PATH:$HOME/bin" >> ~./bashrc 
+  echo "adding ghow to $HOME/bin..."
   cp ghow/ghow.py $HOME/bin/ghow.py 
 fi
 
-# source .bashrc
-. ~/.bashrc
