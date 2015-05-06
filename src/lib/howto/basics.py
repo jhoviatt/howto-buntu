@@ -1,6 +1,4 @@
 
-#!/usr/bin/env python
-
 # Jared Henry Oviatt
 
 def switch(arg):
