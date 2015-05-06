@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+
 set -u;
 set -e;
 
@@ -35,7 +36,7 @@ mkdir -p "$DIST_ROOT/ubuntu/root/usr/lib/";
 rsync -a ./src/ "$DIST_ROOT/ubuntu/root/usr/";
 
 mv $DIST_ROOT/ubuntu/root/usr/bin/howto.py $DIST_ROOT/ubuntu/root/usr/bin/howto;
-mv $DIST_ROOT/ubuntu/root/usr/bin/ghowto.py $DIST_ROOT/ubuntu/root/usr/bin/ghowto;
+mv $DIST_ROOT/ubuntu/root/usr/bin/ghow.py $DIST_ROOT/ubuntu/root/usr/bin/ghow;
 
 find "$DIST_ROOT/ubuntu/" -type d -exec chmod 0755 {} \;
 find "$DIST_ROOT/ubuntu/" -type f -exec chmod go-w {} \;

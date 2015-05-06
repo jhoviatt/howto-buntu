@@ -4,11 +4,13 @@
 
 ### missing bash builtins in searchs
 
-sys.path.append("/usr/lib/howto");
 
 import subprocess
 import sys
-import basics
+
+sys.path.append("/usr/lib/howto");
+
+import basics 
 
 def get_command(argv):
 
