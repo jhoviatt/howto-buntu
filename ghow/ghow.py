@@ -27,7 +27,7 @@ def get_url(argv):
   
   return search_url
 
-def print_results(soup): 
+def print_results(soup, n): 
   
   # a result is in a <li> item with class="g"
   # in a <li>, need to print...
@@ -41,7 +41,7 @@ def print_results(soup):
 
   #print soup.prettify() # raw soup
 
-  print ""
+  print "Result #" + str(n)
   print "===================================================================="
 
   RESULT_TITLE=soup.find_all(class_="r")
@@ -67,8 +67,10 @@ def get_results(url):
   
   results = soup.find_all(class_="g", limit=5)
   
-  for result in results:
-    print_results(result)
+  for n, result in enumerate(results, start=1):
+    print_results(result, n)
+  
+  print "More results: " + url
 
   return soup
 

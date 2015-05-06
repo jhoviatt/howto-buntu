@@ -19,18 +19,24 @@ There are other tools that some have built (such as [this neat site](http://expl
 
 Ideally, this project would bring a user friendly `howto` search tool to the command line, returning a pleasant set of 2 to 10 search results, and offering a google search if less are found. In addition, it would add a `googlehowto` (with alias `ghow`) direct google search capability from the command line returning the top few hits with links and summaries.
 
-----------------------------------------------------------
-
-Currently, this project has no implimentation. All there is, is an `ideas.txt` file containing my brainstorming which is open to explore ideas and plan features.
-If you have an idea, open an issue and let's talk about it. When we like it, submit a pull request to add it to the ideas file - or better yet, to start implementing it.
-
-So for now, *I'll just leave this here...*
-
 -----------------------------------------------------------
 
 ###`googlehowto` Install instructions
 
 1. `git clone` to a local directory of your choice (or fork it, then clone)
-2. run `./ghow_install.sh` - use the command `chmod u+x ghow_install.sh` if you do not have execute privelages already
-3. make sure you have Beautiful Soup installed
-4. google away using the command `ghow` or `googlehowto` followed by search terms! (ex. `-$ ghow change directory`)
+2. make sure you have Beautiful Soup installed
+3. add the following to your ~/.bashrc:
+    alias googlehowto='python $HOME/bin/ghow.py'
+    alias ghow='googlehowto'
+4. run `./ghow_install.sh` - use the command `chmod u+x ghow_install.sh` if you do not have execute privelages already
+5. google away using the command `ghow` or `googlehowto` followed by search terms! (ex. `-$ ghow change directory`)
+
+
+###`howto` Install instructions
+
+1. `git clone` to a local directory of your choice (or fork it, then clone)
+2. make sure you have Beautiful Soup installed
+3. add the following to your ~/.bashrc:
+    alias howto='python $HOME/bin/howto.py'
+4. run `./howto_install.sh` - use the command `chmod u+x howto_install.sh` if you do not have execute privelages already
+5. search the man pages with `howto` folled by search terms, or learn some basics with `howto basics`!
