@@ -1,9 +1,10 @@
-
 #!/usr/bin/env python
 
 # Jared Henry Oviatt
 
 ### missing bash builtins in searchs
+
+sys.path.append("/usr/lib/howto");
 
 import subprocess
 import sys
