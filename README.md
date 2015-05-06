@@ -23,15 +23,16 @@ Ideally, this project would bring a user friendly `howto` search tool to the com
 
 ### Installation Instructions
 
-1. `git clone` to a local directory of your choice (or fork it, then clone)
-2. make sure you have Beautiful Soup installed
-3. add the following to your ~/.bashrc:
+1. `git clone` to a directory of your choice -OR- click on **Download ZIP** on the right hand side and extract it
+2. make sure you [have Beautiful Soup installed](http://www.crummy.com/software/BeautifulSoup/bs4/doc/#installing-beautiful-soup)
+3. add the following to your ~/.bashrc: (see [Beginners' guide to installing ...](https://github.com/underscorejho/howto-buntu/wiki/Beginners%27-guide-to-installing-howto-buntu) for help)
     * `alias googlehowto='python $HOME/bin/ghow.py'`
     * `alias ghow='googlehowto'`
     * `alias howto='python $HOME/bin/howto.py'`
-4. run `./ghow_install.sh` - use the command `chmod u+x ghow_install.sh` if you do not have execute privelages already
-5. run `./howto_install.sh` - use the command `chmod u+x howto_install.sh` if you do not have execute privelages already
-6. source your updated .bashrc with the command `~/.bashrc` -OR- restart your terminal
+4. `cd` (hey look! that's in `howto basics`!) into the directory where the extracted files are located
+5. run command `./ghow_install.sh` - use the command `chmod u+x ghow_install.sh` if you do not have execute privelages already
+6. run command `./howto_install.sh` - use the command `chmod u+x howto_install.sh` if you do not have execute privelages already
+7. source your updated .bashrc with the command `~/.bashrc` -OR- restart your terminal
 
 ###### Now you can...
 * Google away using the command `ghow` or `googlehowto` followed by search terms! (ex. `-$ ghow change directory`)
