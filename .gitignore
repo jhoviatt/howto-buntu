@@ -1,4 +1,5 @@
 /dist
+/old_install
 
 *.swp
 *.pyc
