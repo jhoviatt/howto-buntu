@@ -5,6 +5,6 @@ Priority: optional
 Architecture: all
 Installed-Size: SIZE
 Depends: python-bs4, python
-Maintainer: Jared Henry Oviatt <email@server.tld>
+Maintainer: Jared Henry Oviatt <jaredhenryoviatt@gmail.com>
 Description: Helper for the Shell or Terminal. Offers "howto <topic>" or "ghowto <topic>" for help.
 
