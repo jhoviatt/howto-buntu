@@ -23,18 +23,9 @@ Ideally, this project would bring a user friendly `howto` search tool to the com
 
 ### Installation Instructions
 
-###### Git Clone to your computer.
-1. Alternatively, click on **Download ZIP** on the right hand side of the page.
-2. Next, you need to navigate into the directory where the clone is located.
+Installation instructions are provided with each release. Download the latest release [here](https://github.com/underscorejho/howto-buntu/releases).
 
-###### Run the install commands
-1. Run the command `sudo ./package.sh` to generate the install (.deb) package.
-2. Run the command `sudo dpkg -i /dist/howto-buntu-X.X.X.deb` The 'X's here are the version number. Look at the file if you're not sure. Current version is 0.0.1 .
-3. Lastly, run the command `sudo apt-get install -f` to install howto-buntu on your computer!
-
-Or, if you're still confused see the [Complete Beginners Guide to Installing..](https://github.com/underscorejho/howto-buntu/wiki/Beginners%27-guide-to-installing-howto-buntu).
-
-###### Now you can...
+###### After installing...
 * Google away using the command `ghow` followed by search terms! (ex. `-$ ghow change directory`)
 * Search the man pages with `howto` folled by search terms, or learn some basics with `howto basics`!
 
