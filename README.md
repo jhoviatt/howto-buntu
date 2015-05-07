@@ -27,5 +27,5 @@ Installation instructions are provided with each release. Download the latest re
 
 ###### After installing...
 * Google away using the command `ghow` followed by search terms! (ex. `-$ ghow change directory`)
-* Search the man pages with `howto` folled by search terms, or learn some basics with `howto basics`!
+* Search the man pages with `howto` followed by search terms, or learn some basics with `howto basics`!
 
