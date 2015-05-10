@@ -6,8 +6,7 @@
 ___________________________________________________________________
 
 
-This project was inspired by [this post](http://www.reddit.com/r/Lightbulb/comments/336hkl/google_terminal_for_linux_for_newbies_that_dont/) on reddit asking for a Google terminal for Linux.
-However: if you're going to be *googling* about how to use the terminal, why not use the *terminal* to the learn the terminal!
+This project was inspired by [this post](http://www.reddit.com/r/Lightbulb/comments/336hkl/google_terminal_for_linux_for_newbies_that_dont/) on reddit asking for a Google terminal utility for Linux.
 
 Linux has `man-pages` built into the system, containing way too much information on how to use the terminal and what commands are possible. Like some lost, ancient library the `man-pages` stand in the depths of the system, begging to be parsed and read. 
 
@@ -17,7 +16,7 @@ There are other tools that some have built (such as [this neat site](http://expl
 
 #### How about something in between?
 
-Ideally, this project would bring a user friendly `howto` search tool to the command line, returning a pleasant set of 2 to 10 search results, and offering a google search if less are found. In addition, it would add a  `ghow` direct google search capability from the command line returning the top few hits with links and summaries.
+*howto-buntu* brings a user friendly `howto` search tool to the command line, returning a smaller and more relevant set of search results. In addition, it adds a  `ghow` direct google search capability from the command line returning the top few hits with links and summaries.
 
 -----------------------------------------------------------
 

@@ -14,11 +14,39 @@ import basics
 
 def get_command(argv):
 
-  search_terms = ['apropos', '-a'] # 0 term is command
+  search_terms = ['apropos', '-a']
 
   search_terms.extend(argv)
   
   return search_terms
+
+def check_results(argv):
+  
+  command = get_command(argv)
+
+  results = subprocess.check_output(command)
+
+  command = get_command(argv)
+
+  if not results:
+    y_or_n = raw_input("No results found: google it? (y/n) : ")
+    if y_or_n.lower() == "y":
+      ghow_command = ['ghow']
+      ghow_command.extend(command[2:])
+      subprocess.call(ghow_command)
+      return
+    elif y_or_n.lower() == "n":
+      return
+    else:
+      print "Sorry, input not recognized: not 'Y/y' or 'N/n'"
+      return
+
+  print ""
+  print "Didn't find what you were looking for? Try ghow instead."
+  print ""
+
+  return
+  
 
 def get_help():
   print "Type: 'howto basics' for basic commands"
@@ -40,7 +68,10 @@ def main(argv):
   
   SEARCH_COMMAND = get_command(argv) # gets command from args
 
+  print ""
   subprocess.call(SEARCH_COMMAND)
+
+  check_results(argv)
 
   return 0
   
