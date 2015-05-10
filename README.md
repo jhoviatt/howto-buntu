@@ -1,10 +1,10 @@
 # howto-buntu
+###### v0.0.3
 
 *Okay, yes. I know there are other Linux distros.*
 
 
 ___________________________________________________________________
-
 
 This project was inspired by [this post](http://www.reddit.com/r/Lightbulb/comments/336hkl/google_terminal_for_linux_for_newbies_that_dont/) on reddit asking for a Google terminal utility for Linux.
 
